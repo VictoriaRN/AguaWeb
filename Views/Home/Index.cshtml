@@ -1,25 +1,18 @@
-﻿<div style="max-width: 220px;">
-    <form asp-action="Calcular" asp-controller="Home" method="get" >
+﻿<div style="max-width: 500px;">
+    <form asp-action="NumMonedas" asp-controller="Home" method="get" >
       <div class="text-center mb-4">
 
-        <h1 class="h3 mb-3 font-weight-normal">Cuánto tiempo tardas bañandote</h1>
-
+        <h1 class="my-0 font-weight-normal">Cuánto cambio se te debe?</h1>
+    <div></div>
       </div>
 
       <div class="form-label-group">
-         <label for="ProximoCumple">Próximo cumpleaños</label>
-        <input type="date" id="ProximoCumple" name="ProximoCumple" class="form-control"  required="" autofocus="">
-       
-      </div>
-
-      <div class="form-label-group">
-         <label for="minutos">Minutos</label>
-        <input type="number" id="minutos" name="minutos" min="5" class="form-control" required="">
+        <input type="number" id="DineroQueseDebe" name="DineroQueseDebe" min="0.01" step="0.01" class="form-control" required="">
        
       </div>
 
 
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Calcular</button>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Pedir cambio</button>
 
     </form>
 

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Agua
+namespace codicioso
 {
     public class Startup
     {
@@ -31,7 +31,7 @@ namespace Agua
             app.UseStaticFiles();
 
 
-            /// Es lo mismo que app.UseMvcWithDefaultRoute()
+    
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
